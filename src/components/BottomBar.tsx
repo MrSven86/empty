@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 const stats = [
   "⭐ 5.0 en Google",
   "12 reseñas",
-  "Todas de 5 estrellas",
+  "0 reseñas negativas",
   "+20 años de trayectoria",
 ];
 
