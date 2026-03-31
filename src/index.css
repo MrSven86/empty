@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 18% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 18% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 18% 17%;
+
+    --primary: 207 87% 9%;
+    --primary-foreground: 28 33% 90%;
+
+    --secondary: 27 25% 88%;
+    --secondary-foreground: 207 87% 9%;
+
+    --muted: 27 25% 88%;
+    --muted-foreground: 27 19% 60%;
+
+    --accent: 22 20% 57%;
+    --accent-foreground: 207 87% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 27 25% 78%;
+    --input: 27 25% 78%;
+    --ring: 207 87% 9%;
+
+    --radius: 0px;
+
+    /* Custom tokens */
+    --hero-overlay: linear-gradient(30deg, hsl(207, 87%, 9%) 0%, hsla(67, 14%, 67%, 0.20) 100%);
+    --top-bar-bg: 207 87% 9%;
+    --nav-bg: 207 70% 8%;
+    --bottom-bar-border: 0 0% 100%;
+    --book-btn: 22 16% 50%;
+    --cream: 28 33% 90%;
+    --tan: 22 20% 57%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Gilroy', sans-serif;
+  }
+}
