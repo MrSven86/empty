@@ -8,7 +8,7 @@ const staffMembers = [
     nextDate: "27 de marzo",
     clinic: "Klaas Gran Vía",
     time: "18:00",
-    image: "/images/staff-1.png",
+    image: "/images/staff-1.jpg",
   },
   {
     name: "Dr. Alexei Cherkásov",
@@ -16,7 +16,7 @@ const staffMembers = [
     nextDate: "1 de abril",
     clinic: "Klaas Gran Vía",
     time: "09:00",
-    image: "/images/staff-2.png",
+    image: "/images/staff-2.jpg",
   },
   {
     name: "Dr. Ramiz Guseínov",
@@ -24,7 +24,7 @@ const staffMembers = [
     nextDate: "30 de marzo",
     clinic: "Klaas Oeste",
     time: "17:00",
-    image: "/images/staff-3.png",
+    image: "/images/staff-3.jpg",
   },
 ];
 

@@ -5,12 +5,12 @@ const treatments = [
   {
     category: "ODONTOLOGÍA GENERAL",
     title: "Higiene dental",
-    image: "/images/dental-hygiene.png",
+    image: "/images/dental-hygiene.jpg",
   },
   {
     category: "ODONTOLOGÍA GENERAL",
     title: "Empastes dentales",
-    image: "/images/dental-fillings.png",
+    image: "/images/dental-fillings.jpg",
   },
 ];
 

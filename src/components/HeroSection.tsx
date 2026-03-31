@@ -16,7 +16,7 @@ const HeroSection = () => {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero-dental.png"
+          src="/images/hero-dental.jpg"
           alt="Dental services"
           className={`w-full h-full object-cover transition-transform duration-[1800ms] ease-out ${loaded ? "scale-100" : "scale-110"}`}
         />
