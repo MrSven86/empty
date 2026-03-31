@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ArrowRight } from "lucide-react";
 import TopBar from "./TopBar";
 import NavBar from "./NavBar";
 import BottomBar from "./BottomBar";
@@ -17,8 +18,8 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <img
           src="/images/hero-dental.jpg"
-          alt="Dental services"
-          className={`w-full h-full object-cover transition-transform duration-[1800ms] ease-out ${loaded ? "scale-100 animate-[slow-zoom_25s_ease-in-out_infinite_alternate]" : "scale-110"}`}
+          alt="Consultorio Dr. Cifuentes"
+          className={`w-full h-full object-cover transition-transform duration-[1800ms] ease-out ${loaded ? "scale-100 animate-slow-zoom" : "scale-110"}`}
         />
       </div>
 
@@ -53,15 +54,22 @@ const HeroSection = () => {
         <h1
           className={`text-primary-foreground text-[32px] md:text-[63px] font-normal leading-[40px] md:leading-[75.6px] font-gilroy transition-all duration-1000 delay-300 ease-out ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          Ofrecemos servicios{"\n"}dentales de alto{"\n"}nivel innovador
+          Odontología de primer nivel en el corazón de Recoleta
         </h1>
         <p
           className={`mt-4 md:mt-[29px] text-cream/80 text-[16px] md:text-[21px] font-light leading-[26px] md:leading-[33.6px] font-gilroy transition-all duration-1000 delay-[600ms] ease-out ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          Cuidamos tu sonrisa con la tecnología más avanzada,
-          <br className="hidden md:block" />
-          con garantía en todos nuestros tratamientos.
+          Más de 20 años de trayectoria. Tecnología avanzada. Un equipo que hace que ir al dentista sea, según sus propios pacientes, un placer.
         </p>
+        <a
+          href="#book"
+          className={`inline-flex items-center gap-4 bg-book-btn border border-white/20 px-6 md:px-[29px] py-4 md:py-[20px] mt-6 md:mt-8 transition-all duration-1000 delay-[800ms] ease-out ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+        >
+          <span className="text-primary-foreground text-[11px] md:text-[12.6px] font-bold uppercase tracking-[3.5px] font-gilroy">
+            Reservar turno
+          </span>
+          <ArrowRight className="w-3.5 h-3.5 text-primary-foreground" />
+        </a>
       </div>
 
       {/* Bottom bar */}

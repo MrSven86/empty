@@ -21,15 +21,10 @@ const AboutSection = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-[60px] mb-8 md:mb-[60px]">
             <h2 className="text-[#382E27] text-[32px] md:text-[62px] font-gilroy font-extralight leading-[40px] md:leading-[74px]">
-              Somos excelentes en el cuidado dental y
-              <br className="hidden md:block" />
-              tratamientos
+              Lo que dicen nuestros pacientes lo dice todo.
             </h2>
             <p className="text-[#382E27] text-[16px] md:text-[20px] font-gilroy font-light leading-[28px] md:leading-[35px] max-w-[462px] md:mt-[40px]">
-              Nos apasiona ayudar a las personas a sonreír.
-              Contamos con formación médica especializada,
-              por lo que comprendemos profundamente la salud
-              bucal y los retos de cada paciente.
+              Cuando el 100% de quienes visitan un consultorio se van con 5 estrellas, hay algo que va más allá de la técnica. Sus pacientes hablan de calidez, de puntualidad, y de tecnología que afirman no haber visto en ningún otro consultorio de la ciudad.
             </p>
           </div>
         </div>
@@ -38,20 +33,20 @@ const AboutSection = () => {
         <div ref={imgsRef} className="flex flex-col md:flex-row gap-4 md:gap-[16px]">
           <div className={`flex flex-col transition-all duration-700 ease-out ${imgsVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"}`}>
             <div className="w-full md:w-[714px] h-[220px] md:h-[350px] overflow-hidden">
-              <img src="/images/about-1.jpg" alt="Cuidado dental" className="w-full h-full object-cover" />
+              <img src="/images/about-1.jpg" alt="Consultorio" className="w-full h-full object-cover" />
             </div>
             <p className="text-[#382E27] text-[16px] md:text-[18px] font-gilroy font-normal leading-[28px] md:leading-[33px] max-w-[370px] mt-8 md:mt-[67px]">
-              Somos excelentes en el cuidado dental y tratamientos para todos los pacientes. Cuidamos de ti y de tu familia.
+              Marta Fastuca lleva más de 20 años siendo paciente del Dr. Cifuentes. Juan Manuel Salgado Deisel dice que no volvería a otro dentista jamás. Nacho Bugdahl afirma que hoy ir al dentista es un placer.
             </p>
             <p className="text-[#382E27] text-[16px] md:text-[18px] font-gilroy font-normal leading-[28px] md:leading-[33px] max-w-[370px] mt-6 md:mt-[68px]">
-              Una clínica dental moderna es más que un lugar con la última tecnología. Es una celebración de tu sonrisa.
+              Marisa Pertierra — que vive en Estados Unidos — lo recomienda sin reservas a quien necesite atención dental en Buenos Aires.
             </p>
           </div>
 
           <div
             className={`w-full md:w-[602px] h-[400px] md:h-[770px] overflow-hidden transition-all duration-700 delay-200 ease-out ${imgsVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"}`}
           >
-            <img src="/images/about-2.jpg" alt="Tratamiento dental" className="w-full h-full object-cover" />
+            <img src="/images/about-2.jpg" alt="Atención dental" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>

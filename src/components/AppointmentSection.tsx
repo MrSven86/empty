@@ -1,4 +1,4 @@
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
@@ -8,13 +8,12 @@ const AppointmentSection = () => {
 
   const [form, setForm] = useState({
     name: "",
+    lastName: "",
     phone: "",
-    email: "",
-    type: "",
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
@@ -23,8 +22,7 @@ const AppointmentSection = () => {
   };
 
   return (
-    <section className="w-full bg-background relative overflow-hidden py-16 md:py-[100px]">
-      {/* Decorative circle */}
+    <section id="book" className="w-full bg-background relative overflow-hidden py-16 md:py-[100px]">
       <img
         src="/images/circle-gradient.svg"
         alt=""
@@ -38,28 +36,32 @@ const AppointmentSection = () => {
           className={`pt-4 md:pt-[90px] transition-all duration-800 ease-out ${leftVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
         >
           <span className="font-gilroy text-[14px] font-bold uppercase tracking-wider text-accent block mb-4">
-            Cita
+            Contacto
           </span>
           <h2 className="font-gilroy text-[32px] md:text-[46px] font-bold leading-[1.35] text-primary mb-6">
-            Contacta con nosotros
-            <br />
-            para reservar tu cita
+            Contactá con nosotros para reservar tu turno
           </h2>
           <p className="font-gilroy text-[16px] md:text-[20px] font-light leading-[36px] text-muted-foreground mb-8 max-w-[480px]">
-            Nuestro equipo está listo para ayudarte a encontrar el mejor horario y tratamiento para ti.
+            Atendemos con cita previa. La forma más rápida es escribirnos por WhatsApp o llamarnos directamente.
           </p>
 
           <div className="flex items-center gap-3 mb-4">
             <div className="w-[22px] h-[22px] rounded-full bg-accent flex items-center justify-center">
+              <MapPin className="w-3 h-3 text-white" />
+            </div>
+            <span className="font-gilroy text-[16px] text-primary font-medium">Peña 2108, Recoleta</span>
+          </div>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-[22px] h-[22px] rounded-full bg-accent flex items-center justify-center">
               <Phone className="w-3 h-3 text-white" />
             </div>
-            <span className="font-gilroy text-[16px] text-primary font-medium">+34 911 234 567</span>
+            <span className="font-gilroy text-[16px] text-primary font-medium">+54 11 4806-8803</span>
           </div>
           <div className="flex items-center gap-3">
             <div className="w-[22px] h-[22px] rounded-full bg-accent flex items-center justify-center">
               <Mail className="w-3 h-3 text-white" />
             </div>
-            <span className="font-gilroy text-[16px] text-primary font-medium">hola@klaas.com</span>
+            <span className="font-gilroy text-[16px] text-primary font-medium">contacto@drcifuentes.com</span>
           </div>
         </div>
 
@@ -83,6 +85,15 @@ const AppointmentSection = () => {
               className="w-full h-[52px] rounded-[5px] border border-border px-6 font-gilroy text-[15px] text-foreground placeholder:text-muted-foreground outline-none focus:ring-1 focus:ring-accent bg-transparent"
             />
             <input
+              type="text"
+              name="lastName"
+              placeholder="Apellido"
+              value={form.lastName}
+              onChange={handleChange}
+              maxLength={100}
+              className="w-full h-[52px] rounded-[5px] border border-border px-6 font-gilroy text-[15px] text-foreground placeholder:text-muted-foreground outline-none focus:ring-1 focus:ring-accent bg-transparent"
+            />
+            <input
               type="tel"
               name="phone"
               placeholder="Teléfono"
@@ -91,28 +102,6 @@ const AppointmentSection = () => {
               maxLength={20}
               className="w-full h-[52px] rounded-[5px] border border-border px-6 font-gilroy text-[15px] text-foreground placeholder:text-muted-foreground outline-none focus:ring-1 focus:ring-accent bg-transparent"
             />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={form.email}
-              onChange={handleChange}
-              maxLength={255}
-              className="w-full h-[52px] rounded-[5px] border border-border px-6 font-gilroy text-[15px] text-foreground placeholder:text-muted-foreground outline-none focus:ring-1 focus:ring-accent bg-transparent"
-            />
-            <select
-              name="type"
-              value={form.type}
-              onChange={handleChange}
-              className="w-full h-[52px] rounded-[5px] border border-border px-6 font-gilroy text-[15px] text-muted-foreground outline-none focus:ring-1 focus:ring-accent bg-transparent appearance-none"
-            >
-              <option value="">Tipo de cita</option>
-              <option value="limpieza">Limpieza dental</option>
-              <option value="revision">Revisión general</option>
-              <option value="implantes">Implantes</option>
-              <option value="ortodoncia">Ortodoncia</option>
-              <option value="otro">Otro</option>
-            </select>
             <textarea
               name="message"
               placeholder="Mensaje"
@@ -126,7 +115,7 @@ const AppointmentSection = () => {
               type="submit"
               className="w-full h-[55px] rounded-[3px] bg-accent text-white font-gilroy text-[17px] font-bold hover:opacity-90 transition-opacity"
             >
-              Enviar ahora
+              Enviar consulta
             </button>
           </form>
         </div>

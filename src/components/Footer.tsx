@@ -1,26 +1,19 @@
 const footerLinksLeft = [
   "Inicio",
-  "Categorías",
-  "El Equipo",
-  "Pacientes",
-  "Blog",
-  "Clínicas",
-  "Reservar online",
-];
-
-const footerLinksRight = [
   "Tratamientos",
+  "El Consultorio",
   "Nosotros",
-  "Tarifas",
-  "Galería",
-  "Temas",
   "Contacto",
 ];
 
-const subLinksCol1 = ["Inicio 2", "Tratamientos 2", "Categorías 2", "Nosotros 2"];
-const subLinksCol2 = ["Inicio 3", "Tratamientos 3", "Categorías 3", "Nosotros 3"];
+const footerLinksRight = [
+  "Odontología General",
+  "Cirugía Oral",
+  "Estética Dental",
+  "Rehabilitación Oral",
+];
 
-const bottomLinks = ["Changelog", "Instrucciones", "Licencia", "Página de ejemplo"];
+const subLinksCol1 = ["Turno", "Teléfono", "Ubicación"];
 
 const Footer = () => {
   return (
@@ -40,9 +33,8 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Main footer – dark with background image */}
+      {/* Main footer */}
       <div className="relative w-full bg-primary border-b border-white/10 overflow-hidden">
-        {/* Background image with gradient overlay */}
         <img
           src="/images/footer-bg.png"
           alt=""
@@ -57,23 +49,20 @@ const Footer = () => {
         />
 
         <div className="relative z-10 max-w-[1920px] mx-auto flex flex-col md:flex-row gap-12 md:gap-0 px-8 md:px-14 py-16 md:py-28">
-          {/* Klaas brand card */}
+          {/* Brand card */}
           <div className="flex-shrink-0 w-[220px] md:w-[294px] h-[145px] md:h-[185px] bg-accent flex flex-col items-center justify-center gap-3">
             <span className="text-primary text-[14px] md:text-[16.8px] font-bold uppercase tracking-[8.4px] font-gilroy">
-              Klaas
+              Dr. Cifuentes
             </span>
             <span className="text-primary text-[14px]">✱</span>
             <div className="text-center opacity-80">
               <p className="text-primary/80 text-[10px] md:text-[11.2px] font-semibold uppercase tracking-[2.8px] leading-tight">
-                Dentist Webflow
-              </p>
-              <p className="text-primary/80 text-[10px] md:text-[11.2px] font-semibold uppercase tracking-[2.8px] leading-tight">
-                cms template
+                Odontología
               </p>
             </div>
           </div>
 
-          {/* Main nav links – two columns */}
+          {/* Nav links */}
           <div className="flex-1 flex gap-0 md:ml-24">
             <div className="flex flex-col gap-1 min-w-[160px] md:min-w-[200px]">
               {footerLinksLeft.map((link) => (
@@ -99,7 +88,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Sub-links – two columns, smaller text */}
+          {/* Sub-links */}
           <div className="flex gap-0 md:gap-0">
             <div className="flex flex-col gap-1 min-w-[130px] md:min-w-[180px]">
               {subLinksCol1.map((link) => (
@@ -112,20 +101,9 @@ const Footer = () => {
                 </a>
               ))}
             </div>
-            <div className="flex flex-col gap-1 min-w-[130px] md:min-w-[180px]">
-              {subLinksCol2.map((link) => (
-                <a
-                  key={link}
-                  href="#"
-                  className="text-cream/80 font-light text-[12px] md:text-[14px] leading-[2.1] hover:opacity-80 transition-opacity"
-                >
-                  {link}
-                </a>
-              ))}
-            </div>
           </div>
 
-          {/* Social icons – right side, vertical */}
+          {/* Social icons */}
           <div className="hidden md:flex flex-col items-center gap-16 ml-auto">
             <a href="#" aria-label="Twitter">
               <img src="/images/twitter.svg" alt="Twitter" className="w-[17px] h-[17px] invert" />
@@ -140,24 +118,14 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom bar – solid dark */}
+      {/* Bottom bar */}
       <div className="w-full border-t border-white/10" style={{ backgroundColor: "hsl(207, 100%, 6%)" }}>
         <div className="max-w-[1920px] mx-auto flex flex-col md:flex-row items-center justify-between px-8 md:px-14 py-8">
-          <div className="flex flex-wrap gap-6 md:gap-10">
-            {bottomLinks.map((link) => (
-              <a
-                key={link}
-                href="#"
-                className="text-tan font-light text-[11px] md:text-[12.6px] leading-[16.8px] hover:opacity-80 transition-opacity"
-              >
-                {link}
-              </a>
-            ))}
+          <div className="flex flex-wrap gap-6 md:gap-8">
+            <span className="text-tan font-light text-[11px] md:text-[12.6px]">Dr. Fernando Cifuentes · Odontología</span>
           </div>
           <div className="flex flex-wrap gap-6 md:gap-8 mt-4 md:mt-0">
             <span className="text-tan font-light text-[11px] md:text-[12.6px]">Powered by Lovable</span>
-            <span className="text-tan font-light text-[11px] md:text-[12.6px]">Made by Metrik</span>
-            <span className="text-tan font-light text-[11px] md:text-[12.6px]">Klaas Template</span>
           </div>
         </div>
       </div>
