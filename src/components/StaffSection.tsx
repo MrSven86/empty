@@ -16,7 +16,7 @@ const staffMembers = [
     nextDate: "1 de abril",
     clinic: "Klaas Gran Vía",
     time: "09:00",
-    image: "/images/staff-2.png",
+    image: "/images/staff-2.jpg",
   },
   {
     name: "Dr. Ramiz Guseínov",
