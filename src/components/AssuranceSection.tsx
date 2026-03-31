@@ -31,7 +31,7 @@ const AssuranceSection = () => {
 
           <div className={`relative z-[2] w-full md:-mt-[80px] transition-all duration-700 delay-300 ease-out ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}>
             <img
-              src="/images/assurance.png"
+              src="/images/assurance.jpg"
               alt="Dentista hablando con una paciente en consulta"
               className="h-[320px] w-full object-cover md:h-[507px]"
               loading="lazy"

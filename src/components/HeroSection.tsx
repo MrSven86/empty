@@ -18,7 +18,7 @@ const HeroSection = () => {
         <img
           src="/images/hero-dental.jpg"
           alt="Dental services"
-          className={`w-full h-full object-cover transition-transform duration-[1800ms] ease-out ${loaded ? "scale-100" : "scale-110"}`}
+          className={`w-full h-full object-cover transition-transform duration-[1800ms] ease-out ${loaded ? "scale-100 animate-[slow-zoom_25s_ease-in-out_infinite_alternate]" : "scale-110"}`}
         />
       </div>
 
