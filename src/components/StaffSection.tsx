@@ -8,7 +8,7 @@ const staffMembers = [
     nextDate: "27 de marzo",
     clinic: "Klaas Gran Vía",
     time: "18:00",
-    image: "/images/staff-1.png",
+    image: "/images/staff-1.jpg",
   },
   {
     name: "Dr. Alexei Cherkásov",
