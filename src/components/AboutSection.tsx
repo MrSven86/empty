@@ -38,7 +38,7 @@ const AboutSection = () => {
         <div ref={imgsRef} className="flex flex-col md:flex-row gap-4 md:gap-[16px]">
           <div className={`flex flex-col transition-all duration-700 ease-out ${imgsVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"}`}>
             <div className="w-full md:w-[714px] h-[220px] md:h-[350px] overflow-hidden">
-              <img src="/images/about-1.png" alt="Cuidado dental" className="w-full h-full object-cover" />
+              <img <img src="/images/about-1.jpg" alt="Cuidado dental" className="w-full h-full object-cover" /> alt="Cuidado dental" className="w-full h-full object-cover" />
             </div>
             <p className="text-[#382E27] text-[16px] md:text-[18px] font-gilroy font-normal leading-[28px] md:leading-[33px] max-w-[370px] mt-8 md:mt-[67px]">
               Somos excelentes en el cuidado dental y tratamientos para todos los pacientes. Cuidamos de ti y de tu familia.
