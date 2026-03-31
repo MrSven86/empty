@@ -4,12 +4,12 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 const treatments = [
   {
     category: "ODONTOLOGÍA GENERAL",
-    title: "Higiene dental",
+    title: "Odontología General",
     image: "/images/dental-hygiene.jpg",
   },
   {
-    category: "ODONTOLOGÍA GENERAL",
-    title: "Empastes dentales",
+    category: "CIRUGÍA",
+    title: "Cirugía Oral",
     image: "/images/dental-fillings.jpg",
   },
 ];
@@ -31,7 +31,7 @@ const TreatmentsSection = () => {
           href="#treatments"
           className="flex items-center gap-3 bg-primary text-primary-foreground px-5 md:px-[24px] py-3 md:py-[14px] text-[11px] font-bold uppercase tracking-[3px] font-gilroy hover:opacity-90 transition-opacity"
         >
-          Todos los tratamientos
+          Ver todos los tratamientos
           <ArrowRight className="w-3.5 h-3.5" />
         </a>
       </div>
