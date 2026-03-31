@@ -24,7 +24,7 @@ const staffMembers = [
     nextDate: "30 de marzo",
     clinic: "Klaas Oeste",
     time: "17:00",
-    image: "/images/staff-3.png",
+    image: "/images/staff-3.jpg",
   },
 ];
 

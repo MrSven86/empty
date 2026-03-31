@@ -51,7 +51,7 @@ const AboutSection = () => {
           <div
             className={`w-full md:w-[602px] h-[400px] md:h-[770px] overflow-hidden transition-all duration-700 delay-200 ease-out ${imgsVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"}`}
           >
-            <img src="/images/about-2.png" alt="Tratamiento dental" className="w-full h-full object-cover" />
+            <img <img src="/images/about-2.jpg" alt="Tratamiento dental" className="w-full h-full object-cover" /> alt="Tratamiento dental" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
