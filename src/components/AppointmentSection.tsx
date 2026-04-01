@@ -36,13 +36,13 @@ const AppointmentSection = () => {
           className={`pt-4 md:pt-[90px] transition-all duration-800 ease-out ${leftVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
         >
           <span className="font-gilroy text-[14px] font-bold uppercase tracking-wider text-accent block mb-4">
-            Contacto
+            Reservar turno
           </span>
           <h2 className="font-gilroy text-[32px] md:text-[46px] font-bold leading-[1.35] text-primary mb-6">
-            Contactá con nosotros para reservar tu turno
+            Escribinos y te respondemos el mismo día.
           </h2>
           <p className="font-gilroy text-[16px] md:text-[20px] font-light leading-[36px] text-muted-foreground mb-8 max-w-[480px]">
-            Atendemos con cita previa. La forma más rápida es escribirnos por WhatsApp o llamarnos directamente.
+            Atendemos con cita previa. La forma más rápida es escribirnos por WhatsApp — en la mayoría de los casos confirmamos turno en menos de una hora.
           </p>
 
           <div className="flex items-center gap-3 mb-4">
@@ -75,6 +75,14 @@ const AppointmentSection = () => {
             onSubmit={handleSubmit}
             className="bg-background rounded-[20px] shadow-[0_5px_50px_10px_rgba(0,0,0,0.07)] p-8 md:p-11 flex flex-col gap-[22px]"
           >
+            <div>
+              <h3 className="font-gilroy text-[20px] md:text-[24px] font-bold text-primary mb-1">
+                Reservar mi turno
+              </h3>
+              <p className="font-gilroy text-[14px] font-light text-muted-foreground">
+                Completá el formulario — te confirmamos turno el mismo día.
+              </p>
+            </div>
             <input
               type="text"
               name="name"
@@ -96,7 +104,7 @@ const AppointmentSection = () => {
             <input
               type="tel"
               name="phone"
-              placeholder="Teléfono"
+              placeholder="Teléfono (opcional)"
               value={form.phone}
               onChange={handleChange}
               maxLength={20}
@@ -104,19 +112,24 @@ const AppointmentSection = () => {
             />
             <textarea
               name="message"
-              placeholder="Mensaje"
+              placeholder="¿Qué necesitás? Contanos brevemente"
               value={form.message}
               onChange={handleChange}
               maxLength={1000}
-              rows={4}
+              rows={3}
               className="w-full rounded-[5px] border border-border px-6 py-4 font-gilroy text-[15px] text-foreground placeholder:text-muted-foreground outline-none focus:ring-1 focus:ring-accent bg-transparent resize-none"
             />
-            <button
-              type="submit"
-              className="w-full h-[55px] rounded-[3px] bg-accent text-white font-gilroy text-[17px] font-bold hover:opacity-90 transition-opacity"
-            >
-              Enviar consulta
-            </button>
+            <div>
+              <button
+                type="submit"
+                className="w-full h-[55px] rounded-[3px] bg-accent text-white font-gilroy text-[15px] font-bold hover:opacity-90 transition-opacity uppercase tracking-[2px]"
+              >
+                Enviar — te respondemos hoy
+              </button>
+              <p className="font-gilroy text-[12px] text-muted-foreground text-center mt-3">
+                Sin compromiso. Tu información no se comparte con nadie.
+              </p>
+            </div>
           </form>
         </div>
       </div>

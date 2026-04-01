@@ -50,16 +50,23 @@ const HeroSection = () => {
       </div>
 
       {/* Hero text content */}
-      <div className="absolute left-6 md:left-[242px] top-[50%] md:top-[519px] -translate-y-1/2 md:translate-y-0 z-10 max-w-[90%] md:max-w-[538px] px-4 md:px-0">
-        <h1
-          className={`text-primary-foreground text-[32px] md:text-[63px] font-normal leading-[40px] md:leading-[75.6px] font-gilroy transition-all duration-1000 delay-300 ease-out ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+      <div className="absolute left-6 md:left-[242px] top-[50%] md:top-[490px] -translate-y-1/2 md:translate-y-0 z-10 max-w-[90%] md:max-w-[600px] px-4 md:px-0">
+        {/* Pre-headline label */}
+        <p
+          className={`text-cream/60 text-[11px] font-gilroy font-light uppercase tracking-[3px] mb-4 transition-all duration-700 delay-150 ease-out ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
         >
-          Odontología de primer nivel en el corazón de Recoleta
+          Recoleta, Buenos Aires
+        </p>
+
+        <h1
+          className={`text-primary-foreground text-[32px] md:text-[58px] font-normal leading-[40px] md:leading-[68px] font-gilroy transition-all duration-1000 delay-300 ease-out ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+        >
+          El dentista al que sus pacientes llevan a toda la familia.
         </h1>
         <p
-          className={`mt-4 md:mt-[29px] text-cream/80 text-[16px] md:text-[21px] font-light leading-[26px] md:leading-[33.6px] font-gilroy transition-all duration-1000 delay-[600ms] ease-out ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+          className={`mt-4 md:mt-[29px] text-cream/80 text-[16px] md:text-[20px] font-light leading-[26px] md:leading-[33.6px] font-gilroy transition-all duration-1000 delay-[600ms] ease-out ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          Más de 20 años de trayectoria. Tecnología avanzada. Un equipo que hace que ir al dentista sea, según sus propios pacientes, un placer.
+          12 de 12 pacientes en Google dejaron 5 estrellas. Más de 20 años en Recoleta. Tecnología que la mayoría de consultorios en Buenos Aires todavía no tiene.
         </p>
         <a
           href="#book"
